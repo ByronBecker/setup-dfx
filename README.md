@@ -1,6 +1,6 @@
 # Setup The Internet Computer SDK
 
-This action sets up a `dfx` environment, also includes `moc` and `vessel`.
+This action sets up `vessel`.
 
 **!** Only supports Ubuntu/MacOS virtual environments.
 
@@ -24,7 +24,7 @@ steps:
 - uses: actions/checkout@v3
 - uses: aviate-labs/setup-dfx@v0.2.6
   with:
-    dfx-version: 0.14.2
+    vessel-version: 0.6.5
   env:
     DFX_IDENTITY_PEM: ${{ secrets.DFX_IDENTITY_PEM }}
 - run: |

@@ -1,15 +1,7 @@
-name: 'Setup dfx environment with dfxvm'
+name: 'Setup vessel environment'
 author: 'Quint Daenen, modified by Byron Becker'
-description: 'Setup a dfx environment and add it to the PATH.'
+description: 'Setup a vessel environment and add it to the PATH.'
 inputs:
-  dfx-version:
-    description: 'The dfx version to download.'
-  dfx-disable-encryption:
-    description: 'Wether to use the .pem encryption'
-    default: "false"
-  install-moc:
-    description: 'Whether to install moc through dfx.'
-    default: "false"
   vessel-version:
     description: 'The vessel version to download.'
 runs:
