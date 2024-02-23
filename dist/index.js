@@ -69,8 +69,8 @@ function run() {
             // Opt-out of having data collected about dfx usage.
             core.exportVariable('DFX_TELEMETRY_DISABLED', 1);
             // Install dfx.
-            child_process_1.default.execSync(`echo y | DFXVM_INIT_YES=true DFX_VERSION=${dfxVersion} sh -ci "$(curl -fsSL https://sdk.dfinity.org/install.sh)"`);
-            //cp.execSync(`DFXVM_INIT_YES=true DFX_VERSION=${dfxVersion} sh -ci "$(curl -fsSL https://sdk.dfinity.org/install.sh)" | script -e -c`);
+            //cp.execSync(`echo y | DFXVM_INIT_YES=true DFX_VERSION=${dfxVersion} sh -ci "$(curl -fsSL https://sdk.dfinity.org/install.sh)"`);
+            child_process_1.default.execSync(`DFXVM_INIT_YES=true DFX_VERSION=${dfxVersion} sh -ci "$(curl -fsSL https://sdk.dfinity.org/install.sh)" | script -e -c`);
             const dfxPath = yield io.which('dfx');
             core.debug(dfxPath);
             infoExec(`${dfxPath} --version`);
