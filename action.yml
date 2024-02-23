@@ -1,5 +1,5 @@
-name: 'Setup dfx environment'
-author: 'Quint Daenen'
+name: 'Setup dfx environment with dfxvm'
+author: 'Quint Daenen, modified by Byron Becker'
 description: 'Setup a dfx environment and add it to the PATH.'
 inputs:
   dfx-version:
