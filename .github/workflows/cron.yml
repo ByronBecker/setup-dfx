@@ -18,6 +18,4 @@ jobs:
           install-moc: true
           vessel-version: 0.7.0
       - run: |
-          dfx --version
-          moc --version
           vessel --version

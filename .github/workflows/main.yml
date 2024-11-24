@@ -15,7 +15,4 @@ jobs:
           vessel-version: 0.7.0
           pocket-ic-version: release-2024-04-24_23-01-base
       - run: |
-          dfx --version
-          moc --version
           vessel --version
-          pocket-ic --version
